@@ -183,11 +183,11 @@ img{
         top:760px;
     }
     .Cloud1-2{
-        left:3300px;
+        left:3700px;
         animation: right-to-leftWIDE 90s ease-in infinite;
     }
     .Cloud3-2{
-        left:3300px;
+        left:3700px;
         animation: delayed-right-to-leftWIDE 90s ease-in infinite;
     }
 
