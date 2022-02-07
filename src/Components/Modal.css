@@ -1,0 +1,67 @@
+.modal{
+    position:absolute;
+    font-family: "Roboto", sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #750066;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 510px;
+    z-index: 3;
+    box-shadow: 3px 3px 20px black;
+}
+
+.modalTop{
+    box-shadow: 0px 3px 2px rgb(255, 238, 0);
+    background-color: blueviolet;
+    height:50px;
+    width: 510px;
+    position:absolute;
+    top:0px;
+
+}
+
+.buttonDiv{
+    position:absolute;
+    bottom:15px;
+    right:5px;
+}
+
+.exitButton{
+    position:absolute;
+    right:5px;
+    top:10px;
+    font-size:30px;
+}
+
+
+.modal h2{
+    color: rgb(255, 238, 0);
+    transform:translate(5%,-30%);
+    text-align:left;
+    font-family: 'Abel', sans-serif;
+}
+
+.modal p{
+    color: rgb(255, 238, 0);
+    transform:translate(2%, 20%);
+    text-align:left;
+    width:fit-content;
+    margin-right:5%;
+}
+
+
+@media (max-width: 500px) {
+    .modal{
+        height:200px;
+    }
+    .modal p{
+        font-size:12px;
+        margin-right:35%;
+    }
+    .button5{
+        transform:translate(-80%);
+    }
+}

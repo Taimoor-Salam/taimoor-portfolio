@@ -1,0 +1,314 @@
+img{
+    z-index:3;
+}
+
+.level2Container{
+    position:relative;
+    z-index:3;
+}
+
+.switch{
+    position: absolute;
+    height: 120px;
+    width: 90px;
+    top: 550px;
+    left: 205px;
+}
+
+.switchButton{
+    position: absolute;
+    height: 120px;
+    width: 90px;
+    top: 550px;
+    left: 205px;
+    opacity: 50%;
+    z-index: 4;
+    opacity: 0;
+}
+
+.level2Text{
+    -webkit-text-stroke-width: 1px;
+    font-family: 'Fjalla One', sans-serif;
+    text-shadow: 4px 4px 12px black;
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    justify-items:center;
+    animation: fade-in 7s;
+    z-index:3;
+}
+
+.level2Text h1{
+    height:90vh;
+    width: 100vw;
+    font-size:45px;
+    color: rgb(255, 238, 0);   
+    text-shadow: 5px 5px 4px 4px black;
+    position: absolute;
+}
+
+.level2Text h2{
+    height: 79vh;
+    width: 100vw;
+    color: greenyellow;
+    text-shadow: 2px 2px 3px 4px black;
+    font-size: 25px;
+    font-style:normal;
+    font-family: 'Abel', sans-serif;
+    position: absolute;
+}
+
+.icon1{
+    position:absolute;
+    align-items: center;
+    color: rgb(0, 225, 255);
+    height: 70vh;
+    width: 68vw;
+    font-size: 100px;
+    animation: fade-in 2s;
+}
+
+@keyframes fade-in{
+    0%{
+        opacity:0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.icon1 p{
+    position:relative;
+    text-shadow: 0px 0px 10px black;
+    bottom:60px;
+    font-size: 25px;
+}
+
+.icon2{
+    position:absolute;
+    align-items: center;
+    color: rgb(0, 255, 55);
+    height: 70vh;
+    width: 90vw;
+    font-size: 100px;
+    animation: fade-in 4s;
+}
+
+.icon2 p{
+    position:relative;
+    text-shadow: 0px 0px 10px black;
+    bottom:60px;
+    font-size: 25px;
+}
+
+.icon3{
+    position:absolute;
+    align-items: center;
+    color: rgb(255, 187, 0);
+    height: 70vh;
+    width: 111vw;
+    font-size: 100px;
+    animation: fade-in 6s;
+}
+
+.icon3 p{
+    position:relative;
+    text-shadow: 0px 0px 10px black;
+    bottom:60px;
+    font-size: 25px;
+}
+
+.icon4{
+    position:absolute;
+    align-items: center;
+    font-family:serif;
+    text-shadow: 0px 0px 0px black;
+    color: rgb(255, 0, 98);
+    height: 70vh;
+    width: 132vw;
+    font-size: 100px;
+    animation: fade-in 8s;
+}
+
+.icon4 p{
+    position:relative;
+    text-shadow: 0px 0px 10px black;
+    bottom:50px;
+    font-size: 25px;
+}
+
+.iconBack{
+    position:absolute;
+    height:70vh;
+    width:100vw;
+}
+
+.cloudLayer{
+    position:relative;
+    z-index:0;
+}
+
+.Cloud1-2{
+    position:absolute;
+    width:  570px;
+    height: 290px;
+    left: 1650px;
+    top:10px;
+    transition: transform 70s ease-in;
+    animation: right-to-left2 70s ease-in infinite;
+    z-index:0;
+
+}
+
+
+.Cloud3-2{
+    position:absolute;
+    z-index: 0;
+    width:  580px;
+    height: 180px;
+    left: 1650px;
+    top:230px;
+    transition: transform 90s ease-in;
+    animation: delayed-right-to-left2 90s ease-in infinite;
+
+}
+@media (min-aspect-ratio:21/9){
+    .switch{
+        left:405px;
+        bottom:110px;
+    }
+    .switchButton{
+        left:405px;
+        top:760px;
+    }
+    .Cloud1-2{
+        left:3000px;
+        animation: right-to-leftWIDE 90s ease-in infinite;
+    }
+    .Cloud3-2{
+        left:3000px;
+        animation: delayed-right-to-leftWIDE 90s ease-in infinite;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .switch{
+        height: 60px;
+        width: 30px;
+        top: 750px;
+        left: 42px;
+    }
+    
+    .switchButton{
+        height: 120px;
+        width: 90px;
+        top: 750px;
+        left: 42px;
+    }
+    .iconBack{
+        right:5px;
+        top:790px;
+    }
+    .icon1{
+        font-size:50px;
+    }
+
+    .icon1 p{
+        font-size:12px;
+        bottom:32px;
+    }
+    .icon2{
+        font-size:50px;
+        left:5px;
+    }
+
+    .icon2 p{
+        font-size:12px;
+        bottom:78px;
+    }
+    .icon3{
+        font-size:50px;
+        left:10px;
+    }
+
+    .icon3 p{
+        font-size:12px;
+        bottom:32px;
+    }
+    .icon4{
+        font-size:40px;
+        left:15px;
+    }
+
+    .icon4 p{
+        font-size:12px;
+        bottom:65px;
+    }
+    .imgSky2{
+        z-index:1;
+    }
+    .cloudLayer{
+        visibility:hidden;
+    }
+    
+}
+
+
+
+@keyframes right-to-left2{
+    70%{
+        transform: translateX(-367%);
+        opacity: 100%;
+    }
+    100%{
+        transform: translateX(-367%);
+        opacity: 0%;
+    }
+}
+
+@keyframes delayed-right-to-left2{
+    30%{
+        transform: translateX(0)
+    }
+    80%{
+        transform: translateX(-365%);
+        opacity: 100%;
+    }
+    100%{
+        transform: translateX(-365%);
+        opacity: 0%;
+    }
+}
+
+@keyframes right-to-leftWIDE{
+    70%{
+        transform: translateX(-600%);
+        opacity: 100%;
+    }
+    100%{
+        transform: translateX(-600%);
+        opacity: 0%;
+    }
+}
+
+@keyframes delayed-right-to-leftWIDE{
+    30%{
+        transform: translateX(0)
+    }
+    80%{
+        transform: translateX(-600%);
+        opacity: 100%;
+    }
+    100%{
+        transform: translateX(-600%);
+        opacity: 0%;
+    }
+}
+
+.imgSky2{
+    position:absolute;
+    z-index:-1;
+    opacity:60%;
+}

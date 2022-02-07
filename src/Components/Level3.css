@@ -1,0 +1,121 @@
+
+
+.level3Container{
+    position:relative;
+    z-index: 3;
+    
+}
+
+.modalDiv{
+    position:absolute;
+    top:39vh;
+    right:40vw;
+}
+
+.level3Container h1{
+    position:absolute;
+    top: 25vh;
+    width: 100vw;
+    color: rgb(199, 0, 199);
+    font-family: 'Fjalla One', sans-serif;
+    text-shadow: 4px 4px 1px rgb(255, 251, 0);
+}
+
+.arrow{
+    position:absolute;
+    z-index: 2;
+    width:  110px;
+    height: 170px;
+    top: 42vh;
+    left: 26vw;
+}
+
+.arrow:hover{
+    opacity:50%;
+}
+
+.arrow2{
+    position:absolute;
+    z-index: 2;
+    width:  110px;
+    height: 170px;
+    top: 42vh;
+    right: 27vw;
+    transform: rotate(180deg);
+}
+
+.arrow2:hover{
+    opacity:50%;
+}
+
+.projects{
+    position:absolute;
+    width: 310px;
+    height: 260px;
+    top:39vh;
+    left:41vw;
+    border:10px solid rgb(199, 0, 199);
+    box-shadow: 5px 5px 1px;
+}
+
+.projects img{
+    max-height:100%;
+    max-width:100%;
+}
+
+@media (min-aspect-ratio:21/9){
+    .switch{
+        left:405px;
+        bottom:110px;
+    }
+    .switchButton{
+        left:405px;
+        top:760px;
+    }
+    .Cloud1-2{
+        left:3000px;
+        animation: right-to-leftWIDE 90s ease-in infinite;
+    }
+    .Cloud3-2{
+        left:3000px;
+        animation: delayed-right-to-leftWIDE 90s ease-in infinite;
+    }
+    .projects{
+        transform:translate(-50%);
+        left:50vw;
+        width: 330px;
+        height: 280px;
+    }
+    .button4{
+        transform:translate(-50%);
+        left:50vw;
+    }
+    .modalDiv{
+        left:56vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .level3Container h1{
+        font-size:45px;
+    }
+    .projects {
+        left:40px;
+    }
+    .arrow{
+        bottom: -300px;
+        left:80px;
+    }
+    .arrow2{
+        bottom:-300px;
+        right:80px;
+    }
+    .button4{
+        left:30vw;
+    }
+    .modalDiv{
+        top:0px;
+        left:0px;
+        
+    }
+}
