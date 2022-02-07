@@ -11,16 +11,16 @@ img{
     position: absolute;
     height: 120px;
     width: 90px;
-    top: 580px;
-    left: 220px;
+    top: 590px;
+    left: 230px;
 }
 
 .switchButton{
     position: absolute;
     height: 120px;
     width: 90px;
-    top: 580px;
-    left: 220px;
+    top: 590px;
+    left: 230px;
     opacity: 50%;
     z-index: 4;
     opacity: 0;
@@ -175,19 +175,19 @@ img{
 }
 @media (min-aspect-ratio:21/9){
     .switch{
-        left:405px;
+        left:425px;
         bottom:110px;
     }
     .switchButton{
-        left:405px;
+        left:425px;
         top:760px;
     }
     .Cloud1-2{
-        left:3000px;
+        left:3300px;
         animation: right-to-leftWIDE 90s ease-in infinite;
     }
     .Cloud3-2{
-        left:3000px;
+        left:3300px;
         animation: delayed-right-to-leftWIDE 90s ease-in infinite;
     }
 
