@@ -175,11 +175,11 @@ img{
 }
 @media (min-aspect-ratio:21/9){
     .switch{
-        left:455px;
+        transform: translate(50%);
         bottom:110px;
     }
     .switchButton{
-        left:455px;
+        transform: translate(50%);
         top:760px;
     }
     .Cloud1-2{
