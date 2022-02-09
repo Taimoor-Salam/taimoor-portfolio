@@ -119,20 +119,6 @@ main{
     }
 }
 
-@media (min-aspect-ratio:21/9){
-    .Cloud1{
-        left:1800px;
-    }
-    .Cloud2{
-        left:1800px;
-    }
-    .Cloud3{
-        left:1800px;
-    }
-    .Cloud6{
-        left:1800px;
-    }
-}
 
 @media (max-width: 500px) {
     .nameText p{
@@ -277,5 +263,23 @@ main{
     }
     100%{
         opacity:0%;
+    }
+}
+
+@media (min-aspect-ratio:21/9){
+    .Cloud1{
+        left:1800px;
+    }
+    .Cloud2{
+        left:1800px;
+    }
+    .Cloud3{
+        left:1800px;
+    }
+    .Cloud6{
+        left:1800px;
+    }
+    .nav h1{
+        margin-top:36%;
     }
 }

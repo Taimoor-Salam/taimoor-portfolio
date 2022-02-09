@@ -75,6 +75,10 @@ const Level2 = () => {
 
   return (
     <div>
+
+      <div className="nav">
+        <h1> Activate the switch!</h1>
+        </div>
       <img className="imgSky2" src="images/Level1Imgs/Sky.png" /> 
       
       <div className="cloudLayer">

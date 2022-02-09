@@ -284,11 +284,11 @@ img{
 
 @keyframes right-to-leftWIDE{
     70%{
-        transform: translateX(-600%);
+        transform: translateX(-680%);
         opacity: 100%;
     }
     100%{
-        transform: translateX(-600%);
+        transform: translateX(-680%);
         opacity: 0%;
     }
 }
@@ -298,11 +298,11 @@ img{
         transform: translateX(0)
     }
     80%{
-        transform: translateX(-600%);
+        transform: translateX(-680%);
         opacity: 100%;
     }
     100%{
-        transform: translateX(-600%);
+        transform: translateX(-680%);
         opacity: 0%;
     }
 }
