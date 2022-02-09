@@ -175,19 +175,21 @@ img{
 }
 @media (min-aspect-ratio:21/9){
     .switch{
-        left:425px;
+        left:455px;
         bottom:110px;
     }
     .switchButton{
-        left:425px;
+        left:455px;
         top:760px;
     }
     .Cloud1-2{
         left:3700px;
+        transform: translate(-100%);
         animation: right-to-leftWIDE 90s ease-in infinite;
     }
     .Cloud3-2{
         left:3700px;
+        transform: translate(-100%);
         animation: delayed-right-to-leftWIDE 90s ease-in infinite;
     }
 
@@ -259,11 +261,11 @@ img{
 
 @keyframes right-to-left2{
     70%{
-        transform: translateX(-367%);
+        transform: translateX(-420%);
         opacity: 100%;
     }
     100%{
-        transform: translateX(-367%);
+        transform: translateX(-420%);
         opacity: 0%;
     }
 }
@@ -273,11 +275,11 @@ img{
         transform: translateX(0)
     }
     80%{
-        transform: translateX(-365%);
+        transform: translateX(-420%);
         opacity: 100%;
     }
     100%{
-        transform: translateX(-365%);
+        transform: translateX(-420%);
         opacity: 0%;
     }
 }
