@@ -23,7 +23,7 @@ const Modal = (props) => {
           </p>
         </p>
         <div className="buttonDiv">
-          <form action="https://github.com/Taimoor-Salam" target="_blank">
+          <form action="https://github.com/Taimoor-Salam/FDMS" target="_blank">
             <button type="submit" className="button5">
               <span className="button__text">GITHUB</span>
               <span className="button__icon">
