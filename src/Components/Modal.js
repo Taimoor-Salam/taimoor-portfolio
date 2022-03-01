@@ -7,7 +7,7 @@ const Modal = (props) => {
     return (<div></div>);
   }
 
-  if (pageModal === 2) {
+  if (pageModal === 1) {
     setPageModal(
       <div className="modal">
         <div className="modalTop">
@@ -36,7 +36,7 @@ const Modal = (props) => {
     );
   }
 
-  if (pageModal === 1) {
+  if (pageModal === 2) {
     setPageModal(
       <div className="modal">
         <div className="modalTop">
@@ -50,10 +50,47 @@ const Modal = (props) => {
           integrated with React to deliver this unique, interactive
           demonstration.
           <p>
-            <b>Developed Using: React, JavaScript, Adobe Photoshop</b>
+            <b>Developed Using: React, JavaScript, Photoshop</b>
           </p>
         </p>
-      
+        <div className="buttonDiv">
+          <form action="https://github.com/Taimoor-Salam/taimoor-portfolio" target="_blank">
+            <button type="submit" className="button5">
+              <span className="button__text">GITHUB</span>
+              <span className="button__icon">
+                <ion-icon name="logo-github"></ion-icon>
+              </span>
+            </button>
+          </form>
+        </div>
+      </div>
+    );
+  }
+
+  if (pageModal === 3) {
+    setPageModal(
+      <div className="modal">
+        <div className="modalTop">
+          <h2>IS IT WORTH WATCHING?</h2>
+        </div>
+        <p>
+          This web-app is a search-based site which allows the user to look up the movie/series they're about to watch, and through an API call
+          to a movie database, the application displays information and ratings of the media. Developed with clean UI, the app takes an average of the ratings and relays to the user if
+          the media is worth watching.
+          <p>
+            <b>Developed Using: React, JavaScript, Bootstrap</b>
+          </p>
+        </p>
+        <div className="buttonDiv">
+          <form action="https://github.com/Taimoor-Salam/isitworthwatching" target="_blank">
+            <button type="submit" className="button5">
+              <span className="button__text">GITHUB</span>
+              <span className="button__icon">
+                <ion-icon name="logo-github"></ion-icon>
+              </span>
+            </button>
+          </form>
+        </div>
       </div>
     );
   }

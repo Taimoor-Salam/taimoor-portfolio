@@ -1,11 +1,12 @@
 import "./Level3.css";
 import "./Level1Buttons.css"
 import Modal from "./Modal"
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
+
+let projNUM = 1;
 
 const Level3 = () => {
     
-    const [projNUM, setProjNUM] = useState(2);
     let projMIN = 1;
 
 
@@ -25,28 +26,44 @@ const Level3 = () => {
         }
     }
 
+    useEffect(()=>{
+        projNUM = 1;
+    },[]);
+
     const rightArrowHandler = () =>{
-        pageHandler();
+        projNUM = projNUM + 1;
+        console.log("first click = " + projNUM);
+        if (projNUM > 3){
+            projNUM = 1;
+            console.log("second click = " + projNUM);
+        }
+        setProject(projNUM);
         
     }
 
     const leftArrowHandler = () =>{
-        pageHandler();
+        projNUM = projNUM - 1;
+        console.log("first click = " + projNUM);
+        if (projNUM < 1){
+            projNUM = 3;
+        }
+        console.log("second click = " + projNUM);
+        setProject(projNUM);
 
     }
 
-    const pageHandler = () =>{
-        if (projNUM === 1){
+    const setProject = (projnum) =>{
+        if (projnum === 1){
             setProjectTitle('FDMS');
             setProjectImg("images/Level3Imgs/FDMS.png");
             if (modalState != null){
                 setModalState(null);
                 setInfoTitle('INFO');
             }
-            setProjNUM(2);
+
         }
 
-        if (projNUM === 2){
+        if (projnum === 2){
             setProjectTitle('PORTFOLIO');
             setProjectImg("images/Level3Imgs/PORTFOLIO.png");
 
@@ -54,8 +71,16 @@ const Level3 = () => {
                 setModalState(null);
                 setInfoTitle('INFO');
             }
+        }
 
-            setProjNUM(projMIN);
+        if (projnum === 3){
+            setProjectTitle('IS IT WORTH WATCHING?');
+            setProjectImg("images/Level3Imgs/IIWW.jpg");
+
+            if (modalState != null){
+                setModalState(null);
+                setInfoTitle('INFO');
+            }
         }
     }
 
