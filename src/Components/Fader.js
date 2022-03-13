@@ -60,7 +60,7 @@ const Fader = (props) => {
                 </span> 
             </button>
             </form>
-            <form action="https://drive.google.com/file/d/1qyfrPyd76QahJgIAE85zvNs6hQbZvorg/view" target="_blank">
+            <form action="https://drive.google.com/file/d/1EOoCdFg4NFHxZWWeWBbVGtaT7nM_Rars/view?usp=sharing" target="_blank">
             <button type="submit" className="button3">
                 <span className="button__text">RESUME</span>
                 <span className="button__icon">
